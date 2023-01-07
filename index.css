@@ -33,7 +33,6 @@ button{
 }
 .easybtn{
     margin-top: 15px;
-
     float: inline-end;
     right: 50px;
     position: relative;
@@ -46,27 +45,24 @@ button{
 }
 #btn1{
     margin: 30px;
-    background-color: aqua;
     width: 200px;
     height: 200px;
     border: none;
     border-radius: 19px;
 }
-.btn2{
+#btn2{
     margin: 30px;
     padding: 14px 40px;
     width: 200px;
     height: 200px;
     border: none;
     border-radius: 19px;
-    background-color: yellow;
 }
-.btn3{
+#btn3{
     margin: 30px;
     padding: 14px 40px;
     width: 200px;
     height: 200px;
     border: none;
     border-radius: 19px;
-    background-color: red;
 }
