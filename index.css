@@ -47,6 +47,7 @@ h2{
     font: inherit;
     background-color: #7990C6;
     cursor: pointer;
+    border: none;
 }
 #hardbtn{
     position: relative;
@@ -57,6 +58,7 @@ h2{
     font: inherit;
     cursor: pointer;
     background-color: #7990C6;
+    border: none;
 }
 #easybtn{
     position: relative;
@@ -67,6 +69,8 @@ h2{
     font: inherit;
     cursor: pointer;
     background-color: #7990C6;
+    border: none;
+    margin-right: 20px;
 }
 
 /*
