@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(45, 103, 83);
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    font-size: 60px;
+}
+.container{
+    background-color: blueviolet;
+    height: 200px;
+}
+
+button{
+    text-align: center;
+    font-size: 16px;
+    padding: 14px 40px;
+}
+.playbtn{
+    margin-top: 15px;
+    float: inline-start;
+    position: relative;
+    left: 50px;
+}
+.hardbtn{
+    margin-top: 15px;
+    float: inline-end;
+    position: relative;
+    right: 50px;
+}
+.easybtn{
+    margin-top: 15px;
+
+    float: inline-end;
+    right: 50px;
+    position: relative;
+}
+.guess{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+#btn1{
+    margin: 30px;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 19px;
+}
+.btn2{
+    margin: 30px;
+    padding: 14px 40px;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 19px;
+    background-color: yellow;
+}
+.btn3{
+    margin: 30px;
+    padding: 14px 40px;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 19px;
+    background-color: red;
+}
