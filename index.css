@@ -1,24 +1,75 @@
 body{
-    background-color: rgb(45, 103, 83);
+    background-color: #233841;
+}
+hr{
+    width: 50%;
 }
 h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
+    font-family: 'Bungee Hairline';
+    font-weight: 600;
+    color: #2EABE1;
+    margin: 0;
 }
 h2{
     text-align: center;
-    font-size: 60px;
+    font-size: 65px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #2EABE1;
+    margin: 0;
 }
 .container{
-    background-color: blueviolet;
-    height: 200px;
+    background-color: #233841;
+    height: 400px;
+    border-radius: 10px;
+    /*border: 3px solid green;*/
 }
 
-button{
-    text-align: center;
-    font-size: 16px;
-    padding: 14px 40px;
+.selector{
+    background-color: #233841;
+    width: 100%;
+    height: 70px;
+    
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+    
 }
+
+#playbtn{
+    position: relative;
+    height: inherit;
+    width: 200px;
+    border-radius: 10px;
+    font: inherit;
+    background-color: #7990C6;
+    cursor: pointer;
+}
+#hardbtn{
+    position: relative;
+    float: right;
+    height: inherit;
+    width: 200px;
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer;
+    background-color: #7990C6;
+}
+#easybtn{
+    position: relative;
+    float: right;
+    height: inherit;
+    width: 200px;
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer;
+    background-color: #7990C6;
+}
+
+/*
 .playbtn{
     margin-top: 15px;
     float: inline-start;
@@ -36,7 +87,7 @@ button{
     float: inline-end;
     right: 50px;
     position: relative;
-}
+}*/
 .guess{
     margin-top: 150px;
     display: flex;

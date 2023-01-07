@@ -3,15 +3,20 @@
 <head>    
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>GuessColor</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Bungee Hairline' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
         <h1>Guess the color</h1>
+        <hr>
         <h2 class="rgb">RGB(150,150,150)</h2>
     </div>
-    <button class="playbtn">Play Again</button>
-    <button class="easybtn">EASY</button>
-    <button class="hardbtn">HARD</button>
+    <div class="selector">
+        <button id="playbtn">Play Again</button>
+        <button id="hardbtn">HARD</button>
+        <button id="easybtn">EASY</button> 
+    </div>
     <div class="guess">
         <button id="btn1" style="background-color: red;"></button>
         <button id="btn2" style="background-color: red;"></button>
