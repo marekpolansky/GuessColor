@@ -38,6 +38,7 @@ function playEasy(){
 function playHard(){    
     getRandom();
     let num = Math.floor(Math.random() * 5) + 1;
+    console.log(num);
     if (num == 1){
         document.getElementById('btn2').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
         document.getElementById('btn3').style.backgroundColor= getRandomRgb();
@@ -59,7 +60,7 @@ function playHard(){
         document.getElementById('btn1').style.backgroundColor= getRandomRgb();
         document.getElementById('btn5').style.backgroundColor= getRandomRgb();
     }
-    else if (num == 5){
+    else if (num == 4){
         document.getElementById('btn1').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
         document.getElementById('btn3').style.backgroundColor= getRandomRgb();
         document.getElementById('btn2').style.backgroundColor= getRandomRgb();
