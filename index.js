@@ -6,14 +6,14 @@ wasTheGameWon = false;
 easy = false;
 hard = false;
 
-function getRandomRgb(){
+function getRandom(){
     rgbnum1 = Math.floor(Math.random() * 256);
     rgbnum2 = Math.floor(Math.random() * 256);
     rgbnum3 = Math.floor(Math.random() * 256);
     rgbRef.innerText = 'rgb(' + rgbnum1 + ', ' + rgbnum2 + ', ' + rgbnum3 + ')';
 }
 function playEasy(){    
-    getRandomRgb();
+    getRandom();
     let num = Math.floor(Math.random() * 3) + 1;
 
     document.getElementById('btn1').style.backgroundColor = 'inherit';
@@ -36,7 +36,7 @@ function playEasy(){
     }
 }
 function playHard(){    
-    getRandomRgb();
+    getRandom();
     let num = Math.floor(Math.random() * 5) + 1;
     if (num == 1){
         document.getElementById('btn2').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
@@ -80,7 +80,6 @@ function getRandomRgb(){
 }
 
 function init(){
-    getRandomRgb();
     initializeSelector();
 }
 
