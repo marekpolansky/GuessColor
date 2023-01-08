@@ -133,8 +133,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn2').style.backgroundColor = 'inherit';
                 }
             }
@@ -146,8 +144,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn3').style.backgroundColor = 'inherit';
                 }
             }
@@ -159,8 +155,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn4').style.backgroundColor = 'inherit';
                 }
             }
@@ -182,8 +176,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn1').style.backgroundColor = 'inherit';
                 }
             }
@@ -194,8 +186,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn2').style.backgroundColor = 'inherit';
                 }
             }
@@ -207,8 +197,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn3').style.backgroundColor = 'inherit';
                 }
             }
@@ -220,8 +208,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn4').style.backgroundColor = 'inherit';
                 }
             }
@@ -232,8 +218,6 @@ function initializeButtons(){
                     winningSequence(buttonsList);
                 }
                 else{
-                    document.getElementById('stateString').style.color = 'red';
-                    document.getElementById('stateString').innerText = 'Not good';
                     document.getElementById('btn5').style.backgroundColor = 'inherit';
                 }
             }
@@ -247,7 +231,7 @@ function winningSequence(buttonsList){
     });
     wasTheGameWon = true;
     document.getElementById('stateString').style.color = 'green';
-    document.getElementById('stateString').innerText = 'Good';
+    document.getElementById('stateString').innerText = 'CORRECT';
 }
 
 init();

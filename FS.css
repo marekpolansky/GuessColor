@@ -8,14 +8,14 @@ h1{
 }
 .Title{
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Bungee Hairline';
     font-weight: 600;
     color: #2EABE1;
     margin: 0;
 }
 
-.Start{
+.Start{    
     display: flex;
     justify-content: center;
     height: 300px;
@@ -53,7 +53,6 @@ a{
 }
 .wrapper{
     vertical-align: middle;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }

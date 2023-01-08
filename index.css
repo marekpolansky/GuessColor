@@ -36,6 +36,9 @@ h2{
     font-weight: 900;
     border-radius: 10px;
     position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     
 }
 .State{
@@ -49,11 +52,7 @@ h2{
 #stateString{
     color: unset;
 }
-#playbtn:hover{
-    transform: translateY(-5px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    background-color: #7990C6; /*change the color to a darker one*/
-}
+
 #GameState{
     width: 170px;
     height: inherit;
@@ -63,7 +62,6 @@ h2{
     justify-content: center;
 }
 #hardbtn{
-    float: right;
 }
 #hardbtn:hover{
     transform: translateY(-5px);
@@ -71,7 +69,6 @@ h2{
     background-color: #7990C6; /*change the color to a darker one*/
 }
 #easybtn{
-    float: right;
     margin-right: 20px;
 }
 #easybtn:hover{
