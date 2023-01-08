@@ -211,6 +211,9 @@ function winningSequence(buttonsList){
     buttonsList.forEach(element => {
         element.style.backgroundColor = rgbRef.innerText;
     });
+    wasTheGameWon = true;
+    document.getElementById('stateString').style.color = 'green';
+    document.getElementById('stateString').innerText = 'Good';
 }
 
 init();
