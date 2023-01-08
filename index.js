@@ -74,11 +74,9 @@ function getRandomRgb(){
 
 function init(){
     initializeSelector();
-    initializeButtons();
 }
 
 function initializeSelector(){
-    // when transitioning between easy and hard delete the two remaining btns
     easyBtn = document.getElementById('easybtn');
     hardBtn = document.getElementById('hardbtn');
     againBtn = document.getElementById('playbtn');
@@ -86,8 +84,10 @@ function initializeSelector(){
     easyBtn.addEventListener('click', ()=>
         {
             playEasy();
+            console.log('kokot')
             easy = true;
             hard = false;
+            initializeButtons();
         }
     );
 
@@ -96,6 +96,7 @@ function initializeSelector(){
             playHard();
             hard = true;
             easy = false;
+            initializeButtons();
         }
     );
 
@@ -106,58 +107,97 @@ function initializeSelector(){
             }
         }
     );
+
 }
 
 function initializeButtons(){
     if(easy){
+        buttonsList = 
+        [
+            document.getElementById('btn2'), 
+            document.getElementById('btn3'), 
+            document.getElementById('btn4'), 
+
+        ];
         document.getElementById('btn2').addEventListener('click', ()=>
             {
-
+                if(document.getElementById('btn2').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
 
         document.getElementById('btn3').addEventListener('click', ()=>
             {
-
+                if(document.getElementById('btn3').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
 
         document.getElementById('btn4').addEventListener('click', ()=>
             {
-                
+                if(document.getElementById('btn4').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
     }
     else if(hard){
+        buttonsList = 
+        [
+            document.getElementById('btn1'), 
+            document.getElementById('btn2'), 
+            document.getElementById('btn3'), 
+            document.getElementById('btn4'), 
+            document.getElementById('btn5'), 
+
+        ];
         document.getElementById('btn1').addEventListener('click', ()=>
             {
-
+                if(document.getElementById('btn1').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
         document.getElementById('btn2').addEventListener('click', ()=>
             {
-
+                if(document.getElementById('btn2').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
 
         document.getElementById('btn3').addEventListener('click', ()=>
             {
-
+                if(document.getElementById('btn3').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
 
         document.getElementById('btn4').addEventListener('click', ()=>
             {
-                
+                if(document.getElementById('btn4').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
         document.getElementById('btn5').addEventListener('click', ()=>
             {
-                
+                if(document.getElementById('btn5').style.backgroundColor == rgbRef.innerText){
+                    winningSequence(buttonsList);
+                }
             }
         );
     }
 }
 
+function winningSequence(buttonsList){
+    buttonsList.forEach(element => {
+        element.style.backgroundColor = rgbRef.innerText;
+    });
+}
+
 init();
-rgbRef.innerText = 'RGB(' + rgbnum1 + ',' + rgbnum2 + ',' + rgbnum3 + ')';
+rgbRef.innerText = 'rgb(' + rgbnum1 + ', ' + rgbnum2 + ', ' + rgbnum3 + ')';
