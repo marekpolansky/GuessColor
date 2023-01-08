@@ -172,12 +172,22 @@ function initializeButtons(){
                 if(document.getElementById('btn1').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
                 }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn1').style.backgroundColor = 'inherit';
+                }
             }
         );
         document.getElementById('btn2').addEventListener('click', ()=>
             {
                 if(document.getElementById('btn2').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
+                }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn2').style.backgroundColor = 'inherit';
                 }
             }
         );
@@ -187,6 +197,11 @@ function initializeButtons(){
                 if(document.getElementById('btn3').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
                 }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn3').style.backgroundColor = 'inherit';
+                }
             }
         );
 
@@ -195,12 +210,22 @@ function initializeButtons(){
                 if(document.getElementById('btn4').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
                 }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn4').style.backgroundColor = 'inherit';
+                }
             }
         );
         document.getElementById('btn5').addEventListener('click', ()=>
             {
                 if(document.getElementById('btn5').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
+                }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn5').style.backgroundColor = 'inherit';
                 }
             }
         );

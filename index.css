@@ -43,6 +43,7 @@ h2{
     font-family: sans-serif;
     font-size: 20px;
     font-weight: lighter;
+    height: 20px;
     /*TODO - do sth with height as it changes, when there is/isn't text*/
 }
 #stateString{
@@ -92,6 +93,7 @@ h2{
     border: none;
     border-radius: 19px;
     background-color: inherit;  
+    transition: 350ms;
 }
 .selectorButtons{
     width: 170px;
