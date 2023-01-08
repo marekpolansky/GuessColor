@@ -1,15 +1,52 @@
 body{
     background-color: #233841;
+    margin: 0;
+}
+h1{
+    margin: 0;
 }
 .Title{
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
     font-family: 'Bungee Hairline';
     font-weight: 600;
     color: #2EABE1;
     margin: 0;
 }
 
+.Start{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
 button{
-    
+    background-color: inherit;
+    height: inherit;
+    width: 500px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: 'Bungee Hairline';
+    font-size: 100px;
+    font-weight: 900;
+    color: #233841;
+    background-color: #2EABE1;
+    border: none;
+    transition: 300ms;
+    text-decoration: none;
+}
+button:hover{
+    color: #233841;
+    font-size: 120px;
+    transform: translateY(1px);
+    box-shadow: rgba(1, 1, 1, 0.8) 0 10px 20px;
+    text-decoration: none;
+}
+button:active{
+    color: #233841;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #233841;
 }
