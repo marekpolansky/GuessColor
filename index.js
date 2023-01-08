@@ -1,14 +1,19 @@
 let rgbRef = document.querySelector('.rgb');
 let btn1Ref = document.getElementById('btn1');
 let [rgbnum1,rgbnum2,rgbnum3] = [0,0,0];
-rgbnum1 = Math.floor(Math.random() * 256);
-rgbnum2 = Math.floor(Math.random() * 256);
-rgbnum3 = Math.floor(Math.random() * 256);
+
 wasTheGameWon = false;
 easy = false;
 hard = false;
-    
+
+function getRandomRgb(){
+    rgbnum1 = Math.floor(Math.random() * 256);
+    rgbnum2 = Math.floor(Math.random() * 256);
+    rgbnum3 = Math.floor(Math.random() * 256);
+    rgbRef.innerText = 'rgb(' + rgbnum1 + ', ' + rgbnum2 + ', ' + rgbnum3 + ')';
+}
 function playEasy(){    
+    getRandomRgb();
     let num = Math.floor(Math.random() * 3) + 1;
 
     document.getElementById('btn1').style.backgroundColor = 'inherit';
@@ -31,6 +36,7 @@ function playEasy(){
     }
 }
 function playHard(){    
+    getRandomRgb();
     let num = Math.floor(Math.random() * 5) + 1;
     if (num == 1){
         document.getElementById('btn2').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
@@ -68,11 +74,13 @@ function playHard(){
         document.getElementById('btn1').style.backgroundColor= getRandomRgb();
     }
 }
+
 function getRandomRgb(){
     return "rgb(" + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ")"; 
 }
 
 function init(){
+    getRandomRgb();
     initializeSelector();
 }
 
@@ -86,6 +94,7 @@ function initializeSelector(){
             playEasy();
             easy = true;
             hard = false;
+            document.getElementById('stateString').innerText = '';
             initializeButtons();
         }
     );
@@ -95,6 +104,7 @@ function initializeSelector(){
             playHard();
             hard = true;
             easy = false;
+            document.getElementById('stateString').innerText = '';
             initializeButtons();
         }
     );
@@ -242,4 +252,3 @@ function winningSequence(buttonsList){
 }
 
 init();
-rgbRef.innerText = 'rgb(' + rgbnum1 + ', ' + rgbnum2 + ', ' + rgbnum3 + ')';
