@@ -8,7 +8,7 @@ h1{
 }
 .Title{
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Bungee Hairline';
     font-weight: 600;
     color: #2EABE1;
@@ -52,7 +52,9 @@ a{
     color: #233841;
 }
 .wrapper{
-    vertical-align: middle;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 }
