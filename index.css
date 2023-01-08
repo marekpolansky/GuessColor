@@ -1,8 +1,10 @@
 body{
     background-color: #233841;
+    margin: 0;
 }
 hr{
     width: 50%;
+    margin-top: 0;
 }
 h1{
     text-align: center;
@@ -26,12 +28,10 @@ h2{
     border-radius: 10px;
     /*border: 3px solid green;*/
 }
-
 .selector{
     background-color: #233841;
     width: 100%;
     height: 55px;
-    
     font-size: 22px;
     font-weight: 900;
     border-radius: 10px;
@@ -40,17 +40,18 @@ h2{
 }
 .State{
     text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    /*TODO - do sth with height as it changes, when there is/isn't text*/
 }
-
-#playbtn{
-    position: relative;
-    height: inherit;
-    width: 170px;
-    border-radius: 10px;
-    font: inherit;
-    background-color: #7990C6;
-    cursor: pointer;
-    border: none;
+#stateString{
+    color: unset;
+}
+#playbtn:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background-color: #7990C6; /*change the color to a darker one*/
 }
 #GameState{
     width: 170px;
@@ -61,95 +62,44 @@ h2{
     justify-content: center;
 }
 #hardbtn{
-    position: relative;
     float: right;
-    height: inherit;
-    width: 170px;
-    border-radius: 10px;
-    font: inherit;
-    cursor: pointer;
-    background-color: #7990C6;
-    border: none;
+}
+#hardbtn:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background-color: #7990C6; /*change the color to a darker one*/
 }
 #easybtn{
-    position: relative;
     float: right;
-    height: inherit;
-    width: 170px;
-    border-radius: 10px;
-    font: inherit;
-    cursor: pointer;
-    background-color: #7990C6;
-    border: none;
     margin-right: 20px;
 }
-
-/*
-.playbtn{
-    margin-top: 15px;
-    float: inline-start;
-    position: relative;
-    left: 50px;
+#easybtn:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background-color: #7990C6; /*change the color to a darker one*/
 }
-.hardbtn{
-    margin-top: 15px;
-    float: inline-end;
-    position: relative;
-    right: 50px;
-}
-.easybtn{
-    margin-top: 15px;
-    float: inline-end;
-    right: 50px;
-    position: relative;
-}*/
 .guess{
-    margin-top: 150px;
+    /*margin-top: 150px;*/ /*why was this there in the first place?*/
     display: flex;
     justify-content: center;
     align-items: center;   
 }
-#btn1{
-    margin: 30px;
-    width: 200px;
-    height: 200px;
-    border: none;
-    border-radius: 19px;
-    background-color: inherit;
-}
-#btn2{
+.colorButtons{
     margin: 30px;
     padding: 14px 40px;
     width: 200px;
     height: 200px;
     border: none;
     border-radius: 19px;
-    background-color: inherit;
+    background-color: inherit;  
 }
-#btn3{
-    margin: 30px;
-    padding: 14px 40px;
-    width: 200px;
-    height: 200px;
+.selectorButtons{
+    width: 170px;
+    height: inherit;
+    border-radius: 10px;
+    font: inherit;
+    background-color: #7990C6;
+    cursor: pointer;
     border: none;
-    border-radius: 19px;
-    background-color: inherit;
-}
-#btn4{
-    margin: 30px;
-    padding: 14px 40px;
-    width: 200px;
-    height: 200px;
-    border: none;
-    border-radius: 19px;
-    background-color: inherit;
-}
-#btn5{
-    margin: 30px;
-    padding: 14px 40px;
-    width: 200px;
-    height: 200px;
-    border: none;
-    border-radius: 19px;
-    background-color: inherit;
+    transition: 300ms;
 }

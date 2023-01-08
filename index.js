@@ -84,7 +84,6 @@ function initializeSelector(){
     easyBtn.addEventListener('click', ()=>
         {
             playEasy();
-            console.log('kokot')
             easy = true;
             hard = false;
             initializeButtons();
@@ -124,6 +123,11 @@ function initializeButtons(){
                 if(document.getElementById('btn2').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
                 }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn2').style.backgroundColor = 'inherit';
+                }
             }
         );
 
@@ -132,6 +136,11 @@ function initializeButtons(){
                 if(document.getElementById('btn3').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
                 }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn3').style.backgroundColor = 'inherit';
+                }
             }
         );
 
@@ -139,6 +148,11 @@ function initializeButtons(){
             {
                 if(document.getElementById('btn4').style.backgroundColor == rgbRef.innerText){
                     winningSequence(buttonsList);
+                }
+                else{
+                    document.getElementById('stateString').style.color = 'red';
+                    document.getElementById('stateString').innerText = 'Not good';
+                    document.getElementById('btn4').style.backgroundColor = 'inherit';
                 }
             }
         );
