@@ -124,6 +124,7 @@ h2{
     height: 200px;
     border: none;
     border-radius: 19px;
+    background-color: inherit;
 }
 #btn3{
     margin: 30px;
@@ -132,6 +133,7 @@ h2{
     height: 200px;
     border: none;
     border-radius: 19px;
+    background-color: inherit;
 }
 #btn4{
     margin: 30px;
@@ -140,6 +142,7 @@ h2{
     height: 200px;
     border: none;
     border-radius: 19px;
+    background-color: inherit;
 }
 #btn5{
     margin: 30px;
