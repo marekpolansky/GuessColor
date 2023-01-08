@@ -86,8 +86,6 @@ function init(){
 function initializeSelector(){
     easyBtn = document.getElementById('easybtn');
     hardBtn = document.getElementById('hardbtn');
-    againBtn = document.getElementById('playbtn');
-
     easyBtn.addEventListener('click', ()=>
         {
             playEasy();
@@ -107,15 +105,6 @@ function initializeSelector(){
             initializeButtons();
         }
     );
-
-    againBtn.addEventListener('click', ()=>
-        {
-            if(wasTheGameWon){
-                //code
-            }
-        }
-    );
-
 }
 
 function initializeButtons(){
