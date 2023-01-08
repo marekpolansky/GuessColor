@@ -38,11 +38,8 @@ h2{
     position: static;
     
 }
-.picacina{
-    position:static;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+.State{
+    text-align: center;
 }
 
 #playbtn{
@@ -118,6 +115,7 @@ h2{
     height: 200px;
     border: none;
     border-radius: 19px;
+    background-color: inherit;
 }
 #btn2{
     margin: 30px;
@@ -134,4 +132,21 @@ h2{
     height: 200px;
     border: none;
     border-radius: 19px;
+}
+#btn4{
+    margin: 30px;
+    padding: 14px 40px;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 19px;
+}
+#btn5{
+    margin: 30px;
+    padding: 14px 40px;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 19px;
+    background-color: inherit;
 }

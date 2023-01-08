@@ -6,19 +6,18 @@ rgbnum2 = Math.floor(Math.random() * 256);
 rgbnum3 = Math.floor(Math.random() * 256);
 let num = Math.floor(Math.random() * 3) + 1;
 if (num == 1){
-    document.getElementById('btn1').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
-    document.getElementById('btn2').style.backgroundColor= getRandomRgb()
+    document.getElementById('btn2').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
     document.getElementById('btn3').style.backgroundColor= getRandomRgb()
+    document.getElementById('btn4').style.backgroundColor= getRandomRgb()
 }
 else if (num == 2){
-    document.getElementById('btn2').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
-    document.getElementById('btn1').style.backgroundColor= getRandomRgb()
-    document.getElementById('btn3').style.backgroundColor= getRandomRgb()
+    document.getElementById('btn3').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
+    document.getElementById('btn4').style.backgroundColor= getRandomRgb()
+    document.getElementById('btn2').style.backgroundColor= getRandomRgb()
 }
 else if (num == 3){
-    console.log(document.getElementById('btn3').style.backgroundColor)
-    document.getElementById('btn3').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
-    document.getElementById('btn1').style.backgroundColor= getRandomRgb()
+    document.getElementById('btn4').style.backgroundColor= "rgb(" + rgbnum1 + ", " + rgbnum2 + ", " + rgbnum3 + ")";
+    document.getElementById('btn3').style.backgroundColor= getRandomRgb()
     document.getElementById('btn2').style.backgroundColor= getRandomRgb()
 }
 
