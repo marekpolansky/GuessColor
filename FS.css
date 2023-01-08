@@ -4,6 +4,7 @@ body{
 }
 h1{
     margin: 0;
+    text-shadow: #2EABE1 1px 0 10px;
 }
 .Title{
     text-align: center;
