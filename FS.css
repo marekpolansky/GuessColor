@@ -53,4 +53,7 @@ a{
 }
 .wrapper{
     vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
